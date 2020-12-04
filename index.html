@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" lang="ru">
+<head>
+    <title>Главная</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+	<!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script>
+		$(document).ready(function(){
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:'.prev',
+				nextBu:'.next',
+				playBu:false,
+				duration:500,
+				preset:'fade',
+				pagination:true,//'.pagination',true,'<ul></ul>'
+				pagNums:false,
+				slideshow:8000,
+				numStatus:false,
+				banners:'fromBottom',// fromLeft, fromRight, fromTop, fromBottom
+				waitBannerAnimation:false,
+				progressBar:false
+			})
+			
+	 	}) 
+		$(function(){
+		  if($(window).width() <= 1066)
+			{
+			  $("#slider .prev").css("left", "55px")
+			  $("#slider .next").css("right", "55px")
+			}
+		})
+	</script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+</head>
+<body>
+<div class="bg">
+   <header>
+       <div class="main wrap">
+       		<h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1> 
+            <p>Ул. Землячки 19, Волгоград <span>8 (800) 555 35 35</span></p>
+		</div>
+       <nav>  
+          <ul class="menu">
+              <li class="current"><a href="index.html" class="home"><img src="images/home.jpg" alt=""></a></li>
+              <li><a href="repair.html">Обслуживание</a></li>
+              <li><a href="price-list.html">Прайс Лист</a></li>
+              <li><a href="locations.html">Обратная связь</a></li>
+			  <li><a href="about.html">О нас</a></li>
+          </ul>
+          <div class="clear"></div>
+        </nav>
+   </header>
+   <div id="slider">
+       <div class="slider-block">
+          <div class="slider">
+              <ul class="items">
+                  <li><img src="images/slide-1.jpg" alt="" /><div class="banner"><div><span>Безопасное вождение -</span><strong>Исправные тормаза!</strong><p>Тут какойто текст про Тормаза, и тому подобное Тормоза Тормоза Тормоза Тормоза Тормоза Тормоза Тормоза.</p><a href="price-list.html" class="button">Прайс Лист</a></div></div></li>
+                  <li><img src="images/slide-2.jpg" alt="" /><div class="banner"><div><span>ВИБРОСТЕНД</span><strong>Полная проверка вашего авто</strong><p>Полностью проверим ваш автомобиль на исправность подвески, тормозов и тому подобное, что то там и где то там очень много текста.</p><a href="price-list.html" class="button">Прайс Лист</a></div></div></li>
+                  <li><img src="images/slide-3.jpg" alt="" /><div class="banner"><div><span>Химчистка</span><strong>Полный спектр услуг химчистки</strong><p>Предоставляем полный спектр услуг химчистки, мойки вашего автомобиля, и много какого то текста что бы не оставлять пустым.</p><a href="price-list.html" class="button">Прайс Лист</a></div></div></li>
+              </ul>
+          </div>
+          <a href="#" class="prev"></a>
+          <a href="#" class="next"></a>
+        </div>
+    </div>
+	 <!-- Подключаем Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <!--==============================content================================-->
+   <section id="content"><div class="ic"></div>
+      <div class="block-1 box-1">
+        <div>
+            <img src="images/page1-img1.jpg" alt="">
+            <p class="text-1">График<strong>Сервиса</strong></p>
+            <p class="upper">График нашего автосервиса Понедельник-Пятница(8:00-18:00) Суббота-Воскресенье(10:00-15:00)</p>
+        </div>
+        <div>
+            <img src="images/page1-img2.jpg" alt="">
+            <p class="text-1">Обслуживание<strong>Вашего ТС</strong></p>
+            <p class="upper">Проводим профилактическое обслуживание вашего автомобиля.Проводим полное ТО по гос. правилам.</p>
+        </div>
+        <div>
+            <img src="images/page1-img3.jpg" alt="">
+            <p class="text-1">Ремонт <strong>Сервис</strong></p>
+            <p class="upper">Ремонт вашего транспортного средства. Починим то что уже не починить(кек).</p>
+        </div>
+        <div class="last">
+            <img src="images/page1-img4.jpg" alt="">
+            <p class="text-1">Шиномонтаж <strong>Диски и покрышки</strong></p>
+            <p class="upper">Произвожим качественную замену и балансировку ваших колёс.</p>
+        </div>
+      </div>
+      <div class="block-2 wrap pad-2">
+      	<div class="box-2">
+        	<h2 class="clr-1">Отзывы</h2>
+            <div class="comments">
+            	<div>
+                	“Отличный автосервис, всем остался доволен.”
+                	<div class="comments-corner"></div>
+                </div>
+                <a href="#">Андрей Андреев</a>
+            </div>
+            <div class="comments">
+            	<div>
+                	“Сделали всё быстро и качественно, советую.”
+                	<div class="comments-corner"></div>
+                </div>
+                <a href="#">Максим Максимов</a>
+            </div>
+        </div>
+        <div class="box-3">
+        	<h2 class="clr-1">Наш автосервис</h2>
+            <div class="wrap">
+            	<ul class="list-1">
+                	<li><a href="about.html">О нас</a></li>
+                    <li><a href="repair.html">Обслуживание</a></li>
+                    <li><a href="price-list.html">Прайс Лист</a></li>
+                    <li><a href="locations.html">Обратная связь</a></li>
+                    <li><a href="price-list.html">Шиномонтаж</a></li>
+                    <li><a href="price-list.html">Химчистка</a></li>
+                </ul>
+                <ul class="list-1 last">
+                	<li><a href="price-list.html">Смена масла</a></li>
+                    <li><a href="price-list.html">Проверка вашего ТС</a></li>
+                    <li><a href="price-list.html">Вибростенд</a></li>
+                </ul>
+            </div>
+            <a href="#" class="button-2">Главная</a>
+        </div>    
+      </div>  
+   </section> 	
+</div> 
+</body>
+</html>
